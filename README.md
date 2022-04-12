@@ -23,7 +23,17 @@ The demonstrations are collected with a teleoperation system of our creation.
 
 https://user-images.githubusercontent.com/8159414/159833096-a2a14748-be1a-4aec-83a6-37b8b14de98c.mp4
 
+## How to Download:
+```bash
+curl https://zenodo.org/record/6450413/files/single.zip?download=1 --output blueberry_single.zip
+curl https://zenodo.org/record/6450413/files/clutter.zip?download=1 --output blueberry_clutter.zip
 
+curl https://zenodo.org/record/6450435/files/single.zip?download=1 --output avocado_single.zip
+curl https://zenodo.org/record/6450435/files/clutter.zip?download=1 --output avocado_clutter.zip
+
+curl https://zenodo.org/record/6450439/files/single.zip?download=1 --output banana_single.zip
+curl https://zenodo.org/record/6450439/files/clutter.zip?download=1 --output banana_clutter.zip
+```
 <p align="center">
   
 [![Teleoperation Video](https://img.youtube.com/vi/xiJxB5OeEs8/0.jpg)](https://www.youtube.com/watch?v=xiJxB5OeEs8)
