@@ -11,9 +11,9 @@ Our items are placed in the workspace as single or as a clutter to simulate real
 ![banana_clutter](https://user-images.githubusercontent.com/8159414/160737387-900cec29-1712-4090-afdf-26502b4cbd7c.jpg)
 ![blueberry_clutter](https://user-images.githubusercontent.com/8159414/160737395-2d649ddd-2a0b-4acb-91e4-2c137705f133.jpg) -->
 <p align="center">
-<img src="https://user-images.githubusercontent.com/8159414/160737307-b697d4ef-38dd-4dae-8462-6f2a58e23ec7.jpg" width="300">
-<img src="https://user-images.githubusercontent.com/8159414/160737333-fd431d5d-6fcc-4c06-bc8b-baf9a157c0f5.jpg" width="300"> <img src="https://user-images.githubusercontent.com/8159414/160737357-1b468612-64c4-401f-b699-704eaefb7544.jpg" width="300">
-<img src="https://user-images.githubusercontent.com/8159414/160737376-1381a664-d08e-4c7b-8d09-e8960c27d854.jpg" width="300"> <img src="https://user-images.githubusercontent.com/8159414/160737387-900cec29-1712-4090-afdf-26502b4cbd7c.jpg" width="300"> <img src="https://user-images.githubusercontent.com/8159414/160737395-2d649ddd-2a0b-4acb-91e4-2c137705f133.jpg" width="300">
+<img src="https://user-images.githubusercontent.com/8159414/160737307-b697d4ef-38dd-4dae-8462-6f2a58e23ec7.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/8159414/160737333-fd431d5d-6fcc-4c06-bc8b-baf9a157c0f5.jpg" width="250"> <img src="https://user-images.githubusercontent.com/8159414/160737357-1b468612-64c4-401f-b699-704eaefb7544.jpg" width="250">
+<img src="https://user-images.githubusercontent.com/8159414/160737376-1381a664-d08e-4c7b-8d09-e8960c27d854.jpg" width="250"> <img src="https://user-images.githubusercontent.com/8159414/160737387-900cec29-1712-4090-afdf-26502b4cbd7c.jpg" width="250"> <img src="https://user-images.githubusercontent.com/8159414/160737395-2d649ddd-2a0b-4acb-91e4-2c137705f133.jpg" width="250">
 </p>
 
 It comprehends 10 recordings for 3 different objects (_Avocado_, _Banana_, _Blueberry Box_) in 2 different scenarios (_Single_, _Clutter_) for a total of 60 demonstrations.
