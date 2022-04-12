@@ -1,4 +1,6 @@
-# CRISP_teleoperated_fruit_picking_dataset
+# CRISP Teleoperated Fruit Picking Dataset
+
+### Intro
 Dataset containing the demonstration data collected with a teleoperation system.
 The **CRISP teleoperated fruit picking dataset** contains real-world teleoperated demonstration recordings of teleoperated grasping and manipulation sequences. 
 The dataset offers recordings of RGB-D, Tactile and kinematic data collected during fruit pick-and-place tasks.
@@ -16,14 +18,75 @@ Our items are placed in the workspace as single or as a clutter to simulate real
 <img src="https://user-images.githubusercontent.com/8159414/160737376-1381a664-d08e-4c7b-8d09-e8960c27d854.jpg" width="250"> <img src="https://user-images.githubusercontent.com/8159414/160737387-900cec29-1712-4090-afdf-26502b4cbd7c.jpg" width="250"> <img src="https://user-images.githubusercontent.com/8159414/160737395-2d649ddd-2a0b-4acb-91e4-2c137705f133.jpg" width="250">
 </p>
 
-It comprehends 10 recordings for 3 different objects (_Avocado_, _Banana_, _Blueberry Box_) in 2 different scenarios (_Single_, _Clutter_) for a total of 60 demonstrations.
+It comprehends 10 recordings for 3 different objects (**_Avocado_**, **_Banana_**, **_Blueberry Box_**) in 2 different scenarios (_Single_, _Clutter_) for a total of 60 demonstrations.
 
+The dataset includes 6 activities:
+- **_move-in_** is the act of approaching with the arm to the item the operator wants to grasp or manipulate.
+- **_move-out_** is the opposite of the previous. It corresponds to when the robot arm is leaving the workspace, with or without the item in hand. 
+- **_manipulate_** occurs during the successful and unsuccessful manoeuvres for workspace decluttering.
+- **_grasp_** corresponds to the act of performing a closure around the item. This activity terminates when the hand lifts with or without the item.
+- **_pick-up_** starts at the end of the previous. It corresponds to the act of lifting the item vertically within the workspace.
+- **_drop_** terminates all the demonstrations. It occurs after a $move\textnormal{-}out$ while carrying the item. It terminates when the item gets in contact with a surface outside of the workspace.
 
+--- 
+### Data Modalities
+The dataset provides the following modelities:
+- RGB-D 
+- TF (Robot hand palm, Robot Fingertips, Leap Motion tracked fingertips)
+- Tactile Data
+- Kinematic state of Robot hand and Arm
+RGB is currently available as jpegs. In case another format of RGB, Depth and **ROS** version of the dataset is required, please email `claudiocoppola90@gmail.com`.
+
+For every item and scenario, there are **10** demonstrated episodes. The dataset is organised as following:
+```
+avocado
+    └─ single
+         └── 1
+             ├── allegro_fingertips.csv
+             ├── allegro_joints.csv
+             ├── camera_compressed
+             │   ├── 1634755101828721375.jpg
+             │   ├── 1634755101861649368.jpg
+             │   ├── 1634755101893623525.jpg
+             │   ├── 1634755101927505682.jpg
+             │   ├── .................
+             │   ├──
+             │
+             ├── labels
+             ├── leap_fingertips.csv
+             ├── optoforce_data.csv
+             └── ur5_joints.csv
+```
+The demonstration activities are manually annotated with the following format: `tstamp_begin:tstamp_end;activity`.
+For example, the content of the `labels` file may look like this.
+```
+1634844105833881526:1634844131785567065;move-in
+1634844131785567065:1634844140912956220;manipulate
+1634844140912956220:1634844148261190867;move-out
+1634844148261190867:1634844161656180720;move-in
+1634844161656180720:1634844169650791017;manipulate
+1634844169650791017:1634844180109491830;move-out
+1634844180109491830:1634844215461427984;move-in
+1634844215461427984:1634844227849974205;grasp
+1634844227849974205:1634844231262897166;pick-up
+1634844231262897166:1634844242894455258;move-out
+1634844242894455258:1634844247330759033;drop
+```
+This format has been chosen to cope with the different framerate of the different modalities. 
+
+The images of the `RGB` modalities are saved with their timestamp in the filename inside the `camera_compressed` folder.
+In the other modalities, the timestamp is provided in the `time` column.
+To synchronize the different modalities, you can use the `merge_as_of` function in the `pandas` package.
+
+---
+### Demo Video
 The demonstrations are collected with a teleoperation system of our creation.
 
 https://user-images.githubusercontent.com/8159414/159833096-a2a14748-be1a-4aec-83a6-37b8b14de98c.mp4
 
-## How to Download:
+### How to Download:
+A compressed version of the dataset has been made availabe on Zenodo. This is a temporary solution (especially considering the download speed).
+Please help yourself with the following script to download the files.
 ```bash
 curl https://zenodo.org/record/6450413/files/single.zip?download=1 --output blueberry_single.zip
 curl https://zenodo.org/record/6450413/files/clutter.zip?download=1 --output blueberry_clutter.zip
