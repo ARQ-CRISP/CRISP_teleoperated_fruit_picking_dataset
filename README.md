@@ -78,6 +78,22 @@ The images of the `RGB` modalities are saved with their timestamp in the filenam
 In the other modalities, the timestamp is provided in the `time` column.
 To synchronize the different modalities, you can use the `merge_as_of` function in the `pandas` package.
 
+`allegro_fingertips.csv` - contains cartesian poses of the palm wtr of the robot base and the fingertips in the frame of the wrist.
+`leap_fingertips.csv` - contains cartesian poses of the palm wtr in the leap motion frame and the fingertips in the frame of the wrist.
+These are organised with the following columns
+
+```pose_x pose_y pose_z	pose_qx	pose_qy	pose_qz	pose_qw```
+
+the first 3 columns are the cartesian position of the other are orientation expressed in quaternions.
+
+
+`allegro_joints.csv` - contains the joint states of the allegro hand (16 joints - position, velocity, effort)
+`ur5_joints.csv`- contains the joint states of the allegro hand (6 joints - position, velocity, effort)
+`optoforce_data.csv` - contains the tactile data obtained with the optoforce sensor placed on the manipulator fingertip.
+Tactile data contains the following columns (3 components per finger x fingers).
+
+``` index_x index_y index_z middle_x middle_y middle_z ring_x ring_y ring_z thumb_x thumb_y thumb_z ```
+
 ---
 ### Demo Video
 The demonstrations are collected with a teleoperation system of our creation.
