@@ -1,5 +1,13 @@
 # CRISP Teleoperated Fruit Picking Dataset
 
+
+
+https://user-images.githubusercontent.com/8159414/164998230-76798a12-2a44-4b70-81bd-5f74cddbb3f6.mp4
+
+
+
+
+
 ### Intro
 Dataset containing the demonstration data collected with a teleoperation system.
 The **CRISP teleoperated fruit picking dataset** contains real-world teleoperated demonstration recordings of teleoperated grasping and manipulation sequences. 
