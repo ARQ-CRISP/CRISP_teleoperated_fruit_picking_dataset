@@ -108,6 +108,14 @@ The demonstrations are collected with a teleoperation system of our creation.
 
 https://user-images.githubusercontent.com/8159414/159833096-a2a14748-be1a-4aec-83a6-37b8b14de98c.mp4
 
+Other info about the teleoperation system can be found here:
+<p align="center"> 
+<a href="https://www.youtube.com/watch?feature=player_embedded&v=xiJxB5OeEs8" target="_blank">
+ <img src="https://img.youtube.com/vi/xiJxB5OeEs8/0.jpg" alt="Watch the video" width="540" border="5" />
+</a>
+    
+</p>
+
 ### How to Download:
 A compressed version of the dataset has been made availabe on Zenodo. This is a temporary solution (especially considering the download speed).
 Please help yourself with the following script to download the files.
@@ -121,8 +129,4 @@ curl https://zenodo.org/record/6450435/files/clutter.zip?download=1 --output avo
 curl https://zenodo.org/record/6450439/files/single.zip?download=1 --output banana_single.zip
 curl https://zenodo.org/record/6450439/files/clutter.zip?download=1 --output banana_clutter.zip
 ```
-<p align="center">
-  
-[![Teleoperation Video](https://img.youtube.com/vi/xiJxB5OeEs8/0.jpg)](https://www.youtube.com/watch?v=xiJxB5OeEs8)
 
-</p>
