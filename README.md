@@ -106,7 +106,7 @@ Tactile data contains the following columns (3 components per finger x fingers).
 
 Because of a technical fault the ring finger of the robot was not used during the collection of this dataset.
 Thus, all the fields referring to the index should be ignored (e.g., `ring_x ring_y ring_z`).
-These columns are kept only for future
+These columns are kept only for compatibility with future updates of the dataset, which will include the ring finger.
 
 ---
 ### Demo Video
