@@ -102,6 +102,12 @@ Tactile data contains the following columns (3 components per finger x fingers).
 
 ``` index_x index_y index_z middle_x middle_y middle_z ring_x ring_y ring_z thumb_x thumb_y thumb_z ```
 
+#### Important Note (READ HERE!)
+
+Because of a technical fault the ring finger of the robot was not used during the collection of this dataset.
+Thus, all the fields referring to the index should be ignored (e.g., `ring_x ring_y ring_z`).
+These columns are kept only for future
+
 ---
 ### Demo Video
 The demonstrations are collected with a teleoperation system of our creation.
